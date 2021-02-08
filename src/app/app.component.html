@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<style>
+
+
+ .main {
+   background-color:black;
+   width:100%;
+   height:100%; 
+   position: absolute;
+  }
+
+ .parrafo
+ {
+   color: white;  
+ }
+
+#form {
+  width: 250px;
+  margin: 0 auto;
+  height: 50px;
+}
+
+#form p {
+  text-align: center;
+}
+
+#form label {
+  font-size: 20px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  color: grey;
+}
+
+.clasificacion {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+label:hover,
+label:hover ~ label {
+  color: orange;
+}
+
+input[type="radio"]:checked ~ label {
+  color: orange;
+}
+
+
+.nav-item{
+background-color: black;
+color: yellow;
+
+
+}
+
+</style>
+
+</head>
+
+<body style="background-color:#080808;">
+
+
+<div class= "main" >
+
+
+<div class="container mt-3">
+  <h6 style="color:#FFFFFF" align="center">Ride History</h6>
+  <br>
+
+  <div class="row" >
+
+     
+    <div class="col-sm-12">
+      
+
+          <nav  navbar-dark style = "font-family:courier,arial,helvética;">
+          <div class="nav nav-tabs " id="nav-tab" role="tablist">
+            <a class="nav-item nav-link " id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><h6>Upcoming</h6></a>
+            <a class="nav-item nav-link " id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><h6>Completed</h6></a>
+          </div>
+        </nav>
+
+    </div>  
+  </div>
+  <div class="row alig-items-end">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8">
+      
+       <p class="parrafo">&nbsp;&nbsp;&nbsp;&nbsp;12/01/2021</p>
+      </div>
+       
+  </div>  
+<div class="tab-content">
+
+  <div class="row ">
+    <div class="col-sm-2"></div>
+       <div class="col-sm-8">
+        <!--div class="col"> -->
+            <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"><br>
+            <button  class="btn btn-dark">
+            <span  class= "valida" > 
+            <div class="card-body" style="width:800px">
+            <div class="row">
+            <div class="col">05:00pm</div>
+            <div class="col"></div>
+            <div class="col"> $250.00</div>
+            </div>
+            <p class="card-text">PICKUP</p>
+            <p class="card-text">DROPOFF</p>
+            <button class="btn btn-warning"
+               type="submit" value="submit"  name= "submit"  >Start Driving</button>  
+            </div>
+            </span>
+            </button>
+            </div>
+            
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"><br>
+
+            <button  class="btn btn-dark">
+            <span  class= "valida" > 
+            <div class="card-body" style="width:800px">
+            <div class="row">
+            <div >
+
+                <form>
+                  <p class="clasificacion">
+                    <input id="radio1" type="radio" name="estrellas" value="5"><!--
+                    --><label for="radio1">★</label><!--
+                    --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+                    --><label for="radio2">★</label><!--
+                    --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+                    --><label for="radio3">★</label><!--
+                    --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+                    --><label for="radio4">★</label><!--
+                    --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+                    --><label for="radio5">★</label>
+                  </p>
+                </form>
+
+            </div>
+            <div class="col"></div>
+            <div class="col"> $40.00</div>
+            </div>
+            <p class="card-text">PICKUP</p>
+            <p class="card-text">DROPOFF</p>
+            </div>
+            </span>
+            </button>
+            </div>
+
+        </div>
+
+
+        <!--</div> -->
+  
+    </div>
+  </div> 
+ 
+
+  </div> 
+</div>
+</div>
+</body>
+
+</html>
